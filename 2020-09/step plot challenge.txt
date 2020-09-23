@@ -1,0 +1,46 @@
+From: Greg Janée 
+Date: Tue, Sep 22, 2020 at 6:10 PM
+Subject: step plot challenge
+To: ucsb-carpenters
+
+
+Your mission, should you choose to accept it:
+
+Attached is a sample CSV file with occupancy data from BOPS.  
+
+A record like "2020-09-01 12:24:51,4" means: 
+   at 2020-09-01 12:24:51 there are now 4 people in the building.
+
+1. K.F. prepared this data from the raw data, which looked something like this: 
+
+time,delta
+2020-09-01 07:00:00,0
+2020-09-01 07:03:43,1
+2020-09-01 07:16:30,1
+2020-09-01 07:17:04,1
+2020-09-01 09:28:08,1
+2020-09-01 09:48:28,-1
+2020-09-01 10:58:54,1
+2020-09-01 11:07:03,-1
+
+A record like "2020-09-01 09:48:28,-1" means: at 2020-09-01 09:48:28 one person left the building.
+
+How would you go from the cumulative sums you've been given back to the raw deltas?  
+How would you go from deltas back to cumulative sums?
+
+2. Time of day is important here, so the time zone matters.  
+   These times are in local time of course.  
+   Are your times in the right time zone?  
+   How can you tell?  
+   If not, how do you adjust them?
+
+3. Plot the data.  
+
+Creating a line graph is not quite correct: if the occupancy is 3 at one time and 4 the next, there are not 3.5 people in the building in between.  
+Instead, create a step plot. 
+Here's how to create a step plot in Excel: https://excelchamps.com/blog/step-chart-excel/.  
+Is it easier or harder in R or Python?
+
+4. If you did the above in R/Python, challenge yourself to do it in Python/R.
+
+-Greg
